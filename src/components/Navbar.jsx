@@ -14,16 +14,18 @@ const Navbar = ({ activeSection, scrollToSection }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => handleNavClick('home')}>
+            {/* Corrected path to logo.jpg as seen in your public folder */}
             <img 
-              src="/logo.png" 
+              src="/logo.jpg" 
               alt="Anantegrity Exports Logo" 
-              className="h-10 w-auto"
+              className="h-10 w-auto object-contain"
               onError={(e) => {
                 e.target.style.display = 'none';
-                e.target.nextSibling.style.display = 'block';
+                e.target.nextSibling.style.display = 'flex';
               }}
             />
-            <div className="hidden h-10 w-10 bg-gradient-to-br from-emerald-700 to-orange-500 rounded items-center justify-center">
+            {/* Fallback Icon if logo fails to load */}
+            <div className="hidden h-10 w-10 bg-gradient-to-br from-emerald-700 to-orange-500 rounded flex items-center justify-center">
               <span className="text-white font-bold text-lg">A</span>
             </div>
             <h1 className="text-2xl font-bold text-emerald-700">Anantegrity Exports</h1>
