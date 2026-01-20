@@ -34,7 +34,7 @@ export const blogPosts = [
     excerpt: 'Discover why jute is one of the most eco-friendly natural fibers and how it contributes to a sustainable future.',
     date: 'January 15, 2026',
     category: 'Sustainability',
-    image: 'https://images.unsplash.com/photo-1610450938065-276c72e909a3?auto=format&fit=crop&q=80&w=800'
+    image: '/blog1.png'
   },
   {
     id: 2,
@@ -42,7 +42,7 @@ export const blogPosts = [
     excerpt: 'Essential tips and tricks to maintain the beauty and longevity of your jute rugs, bags, and accessories.',
     date: 'January 10, 2026',
     category: 'Care Guide',
-    image: 'https://images.unsplash.com/photo-1620390145325-4c070bd3c09b?auto=format&fit=crop&q=80&w=800'
+    image: '/blog2.png'
   },
   {
     id: 3,
@@ -50,6 +50,6 @@ export const blogPosts = [
     excerpt: 'Explore the traditional techniques and skilled artisans that bring our jute products to life.',
     date: 'January 5, 2026',
     category: 'Craftsmanship',
-    image: 'https://images.unsplash.com/photo-1590736913806-69622d103b41?auto=format&fit=crop&q=80&w=800'
+    image: '/blog3.png'
   }
 ];
